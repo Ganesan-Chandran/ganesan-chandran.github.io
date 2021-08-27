@@ -2,7 +2,7 @@
   "name": "ganesan-chandran-profile",
   "version": "1.0.0",
   "private": true, 
-  "homepage":"https://ganesan-chandran/github.io",
+  "homepage":"https://ganesan-chandran.github.io",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
