@@ -1,0 +1,64 @@
+.service-item {
+  margin-bottom   : 10px;
+  padding         : 50px;
+  background-color: rgba(250, 250, 250, 0.1);
+  transition      : all 0.5s;
+}
+
+.service-item h4 {
+  transition: all 0.5s;
+}
+
+.service-item p {
+  transition: all 0.5s;
+}
+
+.service-item:hover {
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.service-item:hover h4 {
+  color: #1e1e1e;
+}
+
+.service-item:hover p {
+  color: #4a4a4a;
+}
+
+.service-item .service-icon {
+  width            : 70px;
+  height           : 70px;
+  display          : inline-block;
+  margin-bottom    : 30px;
+  background-size  : cover;
+  background-repeat: no-repeat;
+  transition       : all 0.5s;
+}
+
+.skills-left-image {
+  margin-bottom: 40px;
+}
+
+
+.progress {
+  box-shadow      : 0 0 0 2px #d13f4d;
+  border-radius   : 30px;
+  height          : 1.25rem;
+  margin-top      : 5px;
+  border          : 2px solid #fff;
+  background-color: #fff;
+  width           : 90%;
+}
+
+.progress-bar {
+  background-color: #d13f4d;
+}
+
+.progress-wrapper {
+  padding-top: 15px;
+}
+
+.skills-heading {
+  padding-bottom: 60px !important;
+}
+

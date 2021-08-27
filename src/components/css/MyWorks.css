@@ -1,0 +1,23 @@
+/* My Work */
+
+.work-counter {
+  padding   : 100px 0;
+  text-align: center;
+  color     : #fff;
+}
+
+.mywork-heading {
+  padding-bottom: 60px !important;
+}
+
+.mywork-link {
+  color: inherit;
+}
+
+.mywork-link:hover {
+  color: orange;
+}
+
+.mywork-section {
+  padding-bottom: 15px;;
+}
