@@ -26,7 +26,7 @@
           const inc = target / speed;
           if (count < target) {
             el.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 100);
+            setTimeout(updateCount, target > 10 ? 50 : 100);
           } else {
             el.innerText = target;
           }
