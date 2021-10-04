@@ -1,6 +1,19 @@
+import { useEffect, useState } from "react";
 import "./css/MyWorks.css";
+import { getArticleCountRound } from "./utilities/DateCalculator";
+import { readRssFeed } from "./utilities/ReadRssFeed";
 
 const MyWorks = () => {
+  const [articleCount, setArticleCount] = useState(25);
+
+  useEffect(() => {
+    const gerCSharpCornerData = async () => {
+      const data = await readRssFeed('https://www.c-sharpcorner.com/members/ganesan-c5/rss');
+      setArticleCount(data ?? 29);
+    }
+    gerCSharpCornerData();
+  }, []);
+
   return (
     <div className="container">
       <div id="myworks-waypoint"></div>
@@ -18,7 +31,7 @@ const MyWorks = () => {
           <div className="right-text" data-aos="fade-left" data-aos-once={true}>
             <p>I've worked from the ground up on various projects like a migration project, functionality enhancement project,
               and new projects from scratch. Managed mutiple teams as a team leader and delivered the projects on time without compromising on quality.</p>
-            <p>I am contributing in various Tech forums and published articles on different technologies.</p>
+            <p>I am contributing in various Tech forums and published {getArticleCountRound(articleCount)} articles on different technologies.</p>
           </div>
         </div>
       </div>
@@ -26,7 +39,7 @@ const MyWorks = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg">
-              <h1 className="animateNumber" data-number="20">0</h1>
+              <h1 className="animateNumber" data-number={articleCount}>0</h1>
               <span>ARTICLES</span>
             </div>
             <div className="col-lg">
@@ -64,10 +77,18 @@ const MyWorks = () => {
           <div className="col-md-4 mywork-section" data-aos="fade-left" data-aos-once={true}>
             <div className="award-heading-desc">Tech Forum</div>
             <ul className="point-list">
-              <li><a className="mywork-link" href="https://www.c-sharpcorner.com/members/ganesan-c5/forums"
-                rel="noreferrer" target="_blank">
-                <span>C# Corner</span>
-              </a></li>
+              <li>
+                <a className="mywork-link" href="https://www.c-sharpcorner.com/members/ganesan-c5/forums"
+                  rel="noreferrer" target="_blank">
+                  <span>C# Corner</span>
+                </a>
+              </li>
+              <li>
+                <a className="mywork-link" href="https://stackoverflow.com/users/6046499/ganesan-c"
+                  rel="noreferrer" target="_blank">
+                  <span>Stackoverflow</span>
+                </a>
+              </li>
               <li>
                 <a className="mywork-link" href="https://social.msdn.microsoft.com/profile/ganesan%20c/"
                   rel="noreferrer" target="_blank">

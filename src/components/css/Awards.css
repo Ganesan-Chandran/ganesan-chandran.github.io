@@ -9,8 +9,9 @@
 }
 
 .point-list li {
-  display: block;
-  margin : 5px 60px;
+  display     : block;
+  margin      : 5px 60px;
+  margin-right: 0px;
 }
 
 .point-list li::before {
@@ -23,4 +24,22 @@
   border-radius   : 50%;
   background-color: #d13f4d;
   border          : 2px solid white;
+}
+
+.c-sharp-corner-awards {
+  color: white;
+}
+
+.c-sharp-corner-awards:hover {
+  color: #007bff;
+}
+
+.point-list-inner li {
+  margin-left: 25px;
+}
+
+.point-list-inner li::before {
+  left  : 30px;
+  width : 11px;
+  height: 11px;
 }

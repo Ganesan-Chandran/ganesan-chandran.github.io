@@ -6,9 +6,9 @@ const Skills = () => {
     JavaScript: "90%",
     CSharp: "90%",
     AWS: "70%",
-    Azure: "75%",
+    Azure: "65%",
     React: "85%",
-    Devops: "70%",
+    Devops: "60%",
     Golang: "75%",
     SQL: "85%",
     Web: "85%",
@@ -33,8 +33,8 @@ const Skills = () => {
             <br />
             <br />
             <p>Experience in AGILE methodology. Work with clients, managers to providing
-              inputs throughout project and coming up with resource requirements, design solutions, 
-              development estimates, and so forth and confirm business objectives are met. 
+              inputs throughout project and coming up with resource requirements, design solutions,
+              development estimates, and so forth and confirm business objectives are met.
               Having good experience in Insurance, Health Domain.</p>
           </div>
         </div>
@@ -117,6 +117,14 @@ const Skills = () => {
             <span className="caption">DevOps</span>
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{ width: Skills.Devops }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.Devops}</div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="progress-wrapper" data-aos="fade-left" data-aos-once={true}>
+            <span className="caption">SQL</span>
+            <div className="progress">
+              <div className="progress-bar" role="progressbar" style={{ width: Skills.SQL }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.SQL}</div>
             </div>
           </div>
         </div>

@@ -45,13 +45,13 @@ const SideBar = () => {
           <div className="social-network">
             <ul className="soial-icons">
               <li>
-                <a href="https://www.linkedin.com/in/ganesan-chandran-677a15133/" rel="noreferrer" target="_blank"><i className="fa fa-linkedin"></i></a>
+                <a className="linkedInColor" href="https://www.linkedin.com/in/ganesan-chandran-677a15133/" rel="noreferrer" target="_blank"><i className="fa fa-linkedin"></i></a>
               </li>
               <li>
-                <a href="https://twitter.com/GanesanChandran" rel="noreferrer" target="_blank"><i className="fa fa-twitter"></i></a>
+                <a className="twitterColor" href="https://twitter.com/GanesanChandran" rel="noreferrer" target="_blank"><i className="fa fa-twitter"></i></a>
               </li>
               <li>
-                <a href="https://github.com/Ganesan-Chandran" rel="noreferrer" target="_blank"><i className="fa fa-github"></i></a>
+                <a className="gitHubColor" href="https://github.com/Ganesan-Chandran" rel="noreferrer" target="_blank"><i className="fa fa-github"></i></a>
               </li>
             </ul>
           </div>

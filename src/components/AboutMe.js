@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import TypeWritingAnimator from "./utilities/TypeWritingAnimator"
 import { getAge, getExperience } from "./utilities/DateCalculator"
 import File from "./profile/Resume.pdf"
 import "./css/AboutMe.css";
 
 const AboutMe = () => {
+
+  const [width, setWidth] = useState(document.documentElement.clientWidth);
 
   const onDownload = () => {
     const link = document.createElement('a');
@@ -15,12 +17,29 @@ const AboutMe = () => {
     document.body.removeChild(link);
   }
 
+  function getDetails() {
+    return (
+      <ul className="theme-list">
+        <li><b>From:</b> Coimbatore, Tamil Nadu</li>
+        <li><b>Lives In:</b> Chennai, Tamil Nadu</li>
+        <li><b>Age:</b> {getAge()}</li>
+        <li><b>Gender:</b> Male</li>
+      </ul>
+    );
+  }
+
   React.useEffect(() => {
     var elements = document.getElementById('typewritetext');
     var toRotate = '["Full Stack Developer", "Technical Architect", "Tech Blogger", "Tech Community Contributor"]';
     var period = "2000";
     new TypeWritingAnimator(elements, JSON.parse(toRotate), period);
+    window.addEventListener("resize", resize);
+    return () => { window.removeEventListener('resize', resize) };
   }, []);
+
+  function resize() {
+    setWidth(document.documentElement.clientWidth);
+  }
 
   return (
     <div className="container">
@@ -34,14 +53,13 @@ const AboutMe = () => {
           <div className="col-md-5">
             <div className="left-image fade-in-left">
               <img src="assets/images/left-image-1.jpg" alt="" />
-              <br />
-              <br />
-              <ul className="theme-list">
-                <li><b>From:</b> Coimbatore, Tamil Nadu</li>
-                <li><b>Lives In:</b> Chennai, Tamil Nadu</li>
-                <li><b>Age:</b> {getAge()}</li>
-                <li><b>Gender:</b> Male</li>
-              </ul>
+              {
+                width > 750
+                  ?
+                  <> <br /> <br /> {getDetails()} </>
+                  :
+                  <></>
+              }
             </div>
           </div>
           <div className="col-md-7">
@@ -58,6 +76,14 @@ const AboutMe = () => {
                 writing technical blogs about them. </p>
               <p>I am Software Engineer, Software Developer, Technical Architect, Tech Blogger and Passionate Learner.
                 I am contributing in Tech forums and published many articles/blogs in Tech Websites.</p>
+
+              {
+                width <= 750
+                  ?
+                  getDetails()
+                  :
+                  <></>
+              }
 
               <div className="white-button">
                 <button onClick={onDownload}>Download CV</button>

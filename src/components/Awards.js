@@ -24,6 +24,14 @@ const Awards = () => {
       </div>
       <div className="container">
         <div data-aos="fade-right" data-aos-once={true}>
+          <div className="award-heading-desc">C# Corner</div>
+          <ul className="point-list">
+            <li><a className="c-sharp-corner-awards" href="https://www.c-sharpcorner.com/members/ganesan-c5/awards" target="_blank" rel="noreferrer">MVP (Most Valuable Professional) - Sep 2021</a></li>
+            <li><a className="c-sharp-corner-awards" href="https://www.c-sharpcorner.com/members/ganesan-c5/awards" target="_blank" rel="noreferrer">Member of the Month - Aug 2021</a></li>
+          </ul>
+        </div>
+        <br />
+        <div data-aos="fade-right" data-aos-once={true}>
           <div className="award-heading-desc">EMIS Health India Pvt. Ltd</div>
           <ul className="point-list">
             <li>Sprint Champion - 2018 Q3</li>
@@ -33,9 +41,13 @@ const Awards = () => {
         <div data-aos="fade-left" data-aos-once={true}>
           <div className="award-heading-desc">Tata Consultancy Services</div>
           <ul className="point-list">
-            <li>On The Spot Award (Best Performer) - 2017 ( 2 Times - Jun &amp; Oct )</li>
-            <li>On The Spot Award (Best Performer) - 2016 ( 2 Times - Jan &amp; Feb )</li>
-            <li>On The Spot Award (Best Performer) - 2015 ( 2 Times - Apr &amp; May )</li>
+            <li>On The Spot Award (Best Performer)
+              <ul className="point-list-inner">
+                <li>2017 ( 2 Times - Jun &amp; Oct )</li>
+                <li>2016 ( 2 Times - Jan &amp; Feb )</li>
+                <li>2015 ( 2 Times - Apr &amp; May )</li>
+              </ul>
+            </li>
           </ul>
         </div>
         <br />

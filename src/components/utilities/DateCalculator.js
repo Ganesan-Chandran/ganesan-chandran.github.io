@@ -25,3 +25,14 @@ export function getCopyRightYear() {
     return year;
   }
 }
+
+export function getArticleCountRound(count) {
+
+  var remainder = count % 5;
+
+  if (remainder === 0) {
+    return count;
+  } else {
+    return (count - remainder) + "+";
+  }
+}

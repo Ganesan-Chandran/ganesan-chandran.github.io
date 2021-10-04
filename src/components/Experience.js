@@ -13,7 +13,7 @@ const Experience = () => {
         <li data-aos="fade-left" data-aos-once={true}>
           <div className="title">Jan 2018 - Current</div>
           <div className="details">
-            <h5><a href="https://www.emishealth.com/" target="_blank" without rel="noreferrer">EMIS Health India Pvt. Ltd</a></h5>
+            <h5><a href="https://www.emishealth.com/" target="_blank" rel="noreferrer">EMIS Health India Pvt. Ltd</a></h5>
             <small className="fg-theme">Senior Consultant</small>
             <ul className="exp-theme-list">
               <li><b>Senior Consultant</b> (Jul 2021 – Current)</li>
@@ -25,7 +25,7 @@ const Experience = () => {
         <li data-aos="fade-right" data-aos-once={true}>
           <div className="title">Dec 2012 - Jan 2018</div>
           <div className="details">
-            <h5><a href="https://www.tcs.com/" target="_blank" without rel="noreferrer">Tata Consultancy Services</a></h5>
+            <h5><a href="https://www.tcs.com/" target="_blank" rel="noreferrer">Tata Consultancy Services</a></h5>
             <small className="fg-theme">IT Analyst</small>
             <ul className="exp-theme-list exp-theme-list-last">
               <li><b>IT Analyst</b> (Dec 2016 – Jan 2018)</li>

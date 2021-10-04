@@ -7,13 +7,13 @@
 }
 
 .main-nav li a {
-  height           : 35px;
-  line-height      : 35px;
-  display          : inline-block;
-  font-size        : 16px;
-  font-weight      : 700;
-  width            : 100%;
-  transition       : all 0.5s;
+  height     : 35px;
+  line-height: 35px;
+  display    : inline-block;
+  font-size  : 16px;
+  font-weight: 700;
+  width      : 100%;
+  transition : all 0.5s;
 }
 
 a {
@@ -275,4 +275,19 @@ a {
   .responsive-nav {
     display: inline-block;
   }
+}
+
+.linkedInColor:hover {
+  background-color: #0A66C2 !important;
+  color           : #fff !important;
+}
+
+.twitterColor:hover {
+  background-color: #1A8CD8 !important;
+  color           : #fff !important;
+}
+
+.gitHubColor:hover {
+  background-color: #24292F !important;
+  color           : #fff !important;
 }

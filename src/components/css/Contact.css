@@ -45,7 +45,6 @@ section.contact-me {
   text-align: center;
 }
 
-
 .mailto-left .row {
  margin-bottom: 30px;
 }
@@ -57,4 +56,9 @@ section.contact-me {
 
 .mailto:hover {
   color: #007bff;
+}
+
+.mail-width {
+  width: fit-content;
+  padding: 10px;
 }
