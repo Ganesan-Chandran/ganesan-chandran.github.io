@@ -86,7 +86,7 @@ const MyWorks = () => {
               <li>
                 <a className="mywork-link" href="https://stackoverflow.com/users/6046499/ganesan-c"
                   rel="noreferrer" target="_blank">
-                  <span>Stackoverflow</span>
+                  <span>Stack Overflow</span>
                 </a>
               </li>
               <li>

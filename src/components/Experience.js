@@ -11,12 +11,26 @@ const Experience = () => {
       </div>
       <ul className="timeline mt-4 pr-md-5">
         <li data-aos="fade-left" data-aos-once={true}>
+          <div className="title">Mar 2025 - Current</div>
+          <div className="details">
+            <h5><a href="https://www.emishealth.com/" target="_blank" rel="noreferrer">Optum</a></h5>
+            <small className="fg-theme">Solution Architect</small>
+            <ul className="exp-theme-list">
+              <li><b>Solution Architect</b> (Mar 2025 – Current)</li>
+            </ul>
+            <div className="acquisition-div">
+              <i>"Continuation of previous role with EMIS due to acquisition."</i>
+            </div>
+          </div>
+        </li>
+        <li data-aos="fade-left" data-aos-once={true}>
           <div className="title">Jan 2018 - Current</div>
           <div className="details">
             <h5><a href="https://www.emishealth.com/" target="_blank" rel="noreferrer">EMIS Health India Pvt. Ltd</a></h5>
-            <small className="fg-theme">Senior Consultant</small>
-            <ul className="exp-theme-list">
-              <li><b>Senior Consultant</b> (Jul 2021 – Current)</li>
+            <small className="fg-theme">Solution Architect</small>
+            <ul className="exp-theme-list exp-theme-list-last">
+              <li><b>Solution Architect</b> (Mar 2025 – Current)</li>
+              <li><b>Senior Consultant (Technical Architect)</b> (Jul 2021 – Mar 2025)</li>
               <li><b>Consultant</b> (Jan 2020 – Jun 2021)</li>
               <li><b>Senior Associate</b> (Jan 2018 – Dec 2019)</li>
             </ul>

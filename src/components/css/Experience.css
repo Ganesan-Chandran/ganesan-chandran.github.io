@@ -175,6 +175,12 @@
   box-shadow      : 0 0 0 2px #747474;
 }
 
+.acquisition-div {
+  margin-top      : 10px;
+  color           : black;
+  padding-left    : 30px;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .exp-theme-list-last::before {

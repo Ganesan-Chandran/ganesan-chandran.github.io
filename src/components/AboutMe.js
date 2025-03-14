@@ -30,7 +30,7 @@ const AboutMe = () => {
 
   React.useEffect(() => {
     var elements = document.getElementById('typewritetext');
-    var toRotate = '["Full Stack Developer", "Technical Architect", "Tech Blogger", "Tech Community Contributor"]';
+    var toRotate = '["Solution Architect", "Full Stack Developer", "Tech Blogger", "Tech Community Contributor"]';
     var period = "2000";
     new TypeWritingAnimator(elements, JSON.parse(toRotate), period);
     window.addEventListener("resize", resize);
@@ -69,12 +69,12 @@ const AboutMe = () => {
                 <span className="wrap"></span>
               </h5>
               <p> {getExperience()} years of experience in Software development with a variety of technologies
-                such as Azure Services, AWS Services, AWS DevOps, .NET Core, React JS, Golang, Docker and Other Front-End technologies.</p>
+                such as AWS, .NET, ReactJS, JavaScript, TypeScript, MS SQL Server, PostgreSQL, Terraform and CI/CD.</p>
               <p>I have experience in developing the WinForms applications and web applications, as well as applications based on Monolithic,
-                Microservices, Micro-FrontEnd and Cloud. </p>
+                Microservices, Micro-FrontEnd, Cloud and DevOps. </p>
               <p>Passionate to discover new technologies, put into effect them in initiatives and
                 writing technical blogs about them. </p>
-              <p>I am Software Engineer, Software Developer, Technical Architect, Tech Blogger and Passionate Learner.
+              <p>I am Software Engineer, Solution Architect, Tech Blogger and Passionate Learner.
                 I am contributing in Tech forums and published many articles/blogs in Tech Websites.</p>
 
               {

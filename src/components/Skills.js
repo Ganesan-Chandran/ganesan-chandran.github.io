@@ -5,13 +5,13 @@ const Skills = () => {
   const Skills = {
     JavaScript: "90%",
     CSharp: "90%",
-    AWS: "70%",
-    Azure: "65%",
+    AWS: "75%",
+    Terraform: "85%",
     React: "85%",
-    Devops: "60%",
+    Devops: "70%",
     Golang: "75%",
     SQL: "85%",
-    Web: "85%",
+    Web: "90%",
     WinForm: "90%"
   };
 
@@ -50,7 +50,7 @@ const Skills = () => {
         </div>
         <div className="col-md-6">
           <div className="progress-wrapper" data-aos="fade-left" data-aos-once={true}>
-            <span className="caption">React</span>
+            <span className="caption">ReactJS</span>
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{ width: Skills.React }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.React}</div>
             </div>
@@ -68,9 +68,9 @@ const Skills = () => {
         </div>
         <div className="col-md-6">
           <div className="progress-wrapper" data-aos="fade-left" data-aos-once={true}>
-            <span className="caption">Golang</span>
+            <span className="caption">SQL</span>
             <div className="progress">
-              <div className="progress-bar" role="progressbar" style={{ width: Skills.Golang }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.Golang}</div>
+              <div className="progress-bar" role="progressbar" style={{ width: Skills.SQL }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.SQL}</div>
             </div>
           </div>
         </div>
@@ -86,9 +86,9 @@ const Skills = () => {
         </div>
         <div className="col-md-6">
           <div className="progress-wrapper" data-aos="fade-left" data-aos-once={true}>
-            <span className="caption">Azure</span>
+            <span className="caption">Terraform</span>
             <div className="progress">
-              <div className="progress-bar" role="progressbar" style={{ width: Skills.Azure }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.Azure}</div>
+              <div className="progress-bar" role="progressbar" style={{ width: Skills.Terraform }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.Terraform}</div>
             </div>
           </div>
         </div>
@@ -117,14 +117,6 @@ const Skills = () => {
             <span className="caption">DevOps</span>
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{ width: Skills.Devops }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.Devops}</div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="progress-wrapper" data-aos="fade-left" data-aos-once={true}>
-            <span className="caption">SQL</span>
-            <div className="progress">
-              <div className="progress-bar" role="progressbar" style={{ width: Skills.SQL }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{Skills.SQL}</div>
             </div>
           </div>
         </div>

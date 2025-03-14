@@ -27,6 +27,8 @@ const Awards = () => {
           <div className="award-heading-desc">C# Corner</div>
           <ul className="point-list">
             <li><a className="c-sharp-corner-awards" href="https://www.c-sharpcorner.com/members/ganesan-c5/awards" target="_blank" rel="noreferrer">MVP (Most Valuable Professional) - Sep 2021</a></li>
+            <li><a className="c-sharp-corner-awards" href="https://www.c-sharpcorner.com/members/ganesan-c5/awards" target="_blank" rel="noreferrer">MVP (Most Valuable Professional) - Sep 2022</a></li>
+            <li><a className="c-sharp-corner-awards" href="https://www.c-sharpcorner.com/members/ganesan-c5/awards" target="_blank" rel="noreferrer">MVP (Most Valuable Professional) - Dec 2024</a></li>
             <li><a className="c-sharp-corner-awards" href="https://www.c-sharpcorner.com/members/ganesan-c5/awards" target="_blank" rel="noreferrer">Member of the Month - Aug 2021</a></li>
           </ul>
         </div>
